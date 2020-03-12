@@ -1,0 +1,11 @@
+[Unit]
+Description=Server
+
+[Service]
+ExecStart=/home/Server/server.x86_64
+Restart=always
+Group=root
+WorkingDirectory=/home/Server
+
+[Install]
+WantedBy=multi-user.target
